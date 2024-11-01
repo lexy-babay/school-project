@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function navbar({show}) {
   return (
-    <div  className='absolute top-9  w-[300px] ' style={{right:show, transition:'1s'}}>
+    <div  className='absolute top-9 bg-slate-400  w-[300px] ' style={{right:show, transition:'1s'}}>
       <Link to='/' className='hover:text-blue-300'>
       <div className="h-[40px] w-full text-center font-serif">Home</div>
       </Link>
