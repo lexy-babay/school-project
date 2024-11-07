@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaHome } from "react-icons/fa";
-
+import Navbar from './Homefolder/navbar';
 function Header() {
   var [disp,setDisp] = useState('none')
 
@@ -12,6 +12,12 @@ function Header() {
       setDisp('none')
     }
   }
+  const [show, setShow] = useState('-350px');
+
+  const toggleMenu = () => {
+    setShow(show === '-350px' ? '0' : '-350px');
+  };
+
 
   return (
     <div className=''  style={{ display: disp }}>
@@ -21,32 +27,25 @@ function Header() {
           <h1 className='ml-2'>STUDYLMS</h1>
         </div>
 
-        <nav className='hidden md:flex gap-[30px] lg:gap-[70px] relative'>
-          <Link to='/' className='hover:text-blue-300'>Home</Link>
-          <Link to='/contact' className='hover:text-blue-300'>Contact</Link>
-          <Link to='/blog' className='hover:text-blue-300'>Blog</Link>
-          
-          <div className='relative '>
-            <Link className=' hover:text-blue-300'>Services</Link>
-            {/* Dropdown Menu */}
-            {/* <nav className='child flex-col gap-2 absolute top-full right-0 bg-green-500 rounded-lg shadow-lg'>
-              <Link to='/login'>
-                <div className='p-3 text-center hover:bg-green-600'>Login</div>
-              </Link>
-              <Link to='/register'>
-                <div className='p-3 text-center hover:bg-green-600'>Register</div>
-              </Link>
-            </nav> */}
+        <nav className="hidden md:flex gap-[30px] lg:gap-[70px]">
+          <Link to="/" className="hover:text-blue-300">Home</Link>
+          <Link to="/contact" className="hover:text-blue-300">Contact</Link>
+          <Link to="/blog" className="hover:text-blue-300">Blog</Link>
+          <div className="relative group">
+            <Link className="hover:text-blue-300">Services</Link>
+            <nav className="hidden group-hover:flex flex-col gap-2 absolute top-full right-0 bg-green-500 rounded-lg shadow-lg">
+              <Link to="/landing" className="p-3 text-center hover:bg-green-600">Login</Link>
+              <Link to="/register" className="p-3 text-center hover:bg-green-600">Register</Link>
+            </nav>
           </div>
         </nav>
-
         {/* Responsive Menu Icon for Mobile */}
         <div className='md:hidden flex items-center'>
-          <button className='text-xl focus:outline-none'>
+          <button onClick={toggleMenu} className='text-xl focus:outline-none'>
             {/* Replace with an icon, such as a hamburger icon for a mobile menu */}
             ☰
           </button>
-          
+          <Navbar show={show} />
         </div>
       </div>
     </div>

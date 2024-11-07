@@ -13,7 +13,7 @@ function navbar({show}) {
           <Link to='/blog' className='hover:text-blue-300'>
           <div className='h-[40px] w-full text-center  font-serif '>Blog</div>
            </Link>
-          <Link to='/login' className='hover:text-blue-300'>
+          <Link to='/landing' className='hover:text-blue-300'>
           <div className='h-[40px] w-full text-center  font-serif'>Login</div>
           </Link>
           <Link to='/register' className='hover:text-blue-300 text-center'>
