@@ -26,17 +26,17 @@ function Header() {
           <Link to='/contact' className='hover:text-blue-300'>Contact</Link>
           <Link to='/blog' className='hover:text-blue-300'>Blog</Link>
           
-          <div className='relative group'>
-            <Link className='hover:text-blue-300'>Services</Link>
+          <div className='relative '>
+            <Link className=' hover:text-blue-300'>Services</Link>
             {/* Dropdown Menu */}
-            <nav className='hidden group-hover:flex flex-col gap-2 absolute top-full right-0 bg-green-500 rounded-lg overflow-hidden shadow-lg'>
+            {/* <nav className='child flex-col gap-2 absolute top-full right-0 bg-green-500 rounded-lg shadow-lg'>
               <Link to='/login'>
                 <div className='p-3 text-center hover:bg-green-600'>Login</div>
               </Link>
               <Link to='/register'>
                 <div className='p-3 text-center hover:bg-green-600'>Register</div>
               </Link>
-            </nav>
+            </nav> */}
           </div>
         </nav>
 
@@ -46,6 +46,7 @@ function Header() {
             {/* Replace with an icon, such as a hamburger icon for a mobile menu */}
             ☰
           </button>
+          
         </div>
       </div>
     </div>
