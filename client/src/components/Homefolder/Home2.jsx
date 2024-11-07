@@ -2,7 +2,7 @@ import React from 'react';
 
 function Home2() {
   return (
-    <div className='h-auto md:h-[50vh] bg-white grid p-6 md:p-14'>
+    <div className='h-auto md:h-[50vh] bg-white grid p-6 md:p-14 mt-5'>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
         <div className="bg-[url('./assets/pexels1.jpg')] bg-cover bg-center grid grid-rows-[80%,20%] h-[200px] md:h-[230px]">
           <div className=''></div>

@@ -3,20 +3,15 @@ import { TfiCup } from "react-icons/tfi";
 import { FaTv, FaHome } from "react-icons/fa";
 import { IoBookOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom';
-import Navbar from '../Homefolder/navbar'
+import Navbar from '../Homefolder/navbar';
 
 function Home1() {
+  const [show, setShow] = useState('-350px');
 
-  var [show,setshow]=useState('-350px')
+  const toggleMenu = () => {
+    setShow(show === '-350px' ? '0' : '-350px');
+  };
 
-  function clickme() {
-    if (show=='-350px') {
-      setshow('0')
-    } else {
-      setshow('-350px')
-    }
-    
-  }
   return (
     <div className="h-screen w-full bg-[url('/src/assets/book.jpg')] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-end">
 <div className='h-[80px] w-full text-black flex justify-between items-center px-6 md:px-10 '>
@@ -24,34 +19,25 @@ function Home1() {
           <span className='text-blue-500'><FaHome className='text-black' /></span>
           <h1 className='ml-2'>STUDYLMS</h1>
         </div>
-        <nav className='hidden md:flex gap-[30px] lg:gap-[70px] relative'>
-          <Link to='/' className='hover:text-blue-300'>Home</Link>
-          <Link to='/contact' className='hover:text-blue-300'>Contact</Link>
-          <Link to='/blog' className='hover:text-blue-300'>Blog</Link>
-          
-          <div className='relative '>
-            <Link className=' hover:text-blue-300'>Services</Link>
-            {/* Dropdown Menu */}
-            <nav className='child flex-col gap-2 absolute top-full right-0 bg-green-500 rounded-lg shadow-lg'>
-              <Link to='/login'>
-                <div className='p-3 text-center hover:bg-green-600'>Login</div>
-              </Link>
-              <Link to='/register'>
-                <div className='p-3 text-center hover:bg-green-600'>Register</div>
-              </Link>
+        <nav className="hidden md:flex gap-[30px] lg:gap-[70px]">
+          <Link to="/" className="hover:text-blue-300">Home</Link>
+          <Link to="/contact" className="hover:text-blue-300">Contact</Link>
+          <Link to="/blog" className="hover:text-blue-300">Blog</Link>
+          <div className="relative group">
+            <Link className="hover:text-blue-300">Services</Link>
+            <nav className="hidden group-hover:flex flex-col gap-2 absolute top-full right-0 bg-green-500 rounded-lg shadow-lg">
+              <Link to="/landing" className="p-3 text-center hover:bg-green-600">Login</Link>
+              <Link to="/register" className="p-3 text-center hover:bg-green-600">Register</Link>
             </nav>
           </div>
         </nav>
-
-        {/* Responsive Menu Icon for Mobile */}
-        <div className='md:hidden flex items-center relative'>
-          <button onClick={clickme} className='text-xl focus:outline-none'>
-            {/* Replace with an icon, such as a hamburger icon for a mobile menu */}
+        <div className="md:hidden flex items-center">
+          <button onClick={toggleMenu} className="text-xl focus:outline-none">
             ☰
           </button>
-    <Navbar  show={show}/>
+          <Navbar show={show} />
         </div>
-      </div> 
+      </div>
 
       <div className="flex items-end justify-center w-full h-full px-4 md:px-0">
         <div className="w-full md:w-[90%] h-[80vh] grid grid-rows-[70%,30%] gap-4">
@@ -68,32 +54,31 @@ function Home1() {
             </div>
           </div><br />
 
-          <div className="bg-blue-500 h-[150px] w-[100%]  grid grid-cols-1 md:grid-cols-3 ">
+          <div className="bg-blue-500 h-[150px] w-[100%] grid grid-cols-1 md:grid-cols-3 mt-7 mb-5">
             <div className="hover:bg-blue-700 transition text-black flex gap-5 items-center p-4">
-              <TfiCup className='text-3xl md:text-5xl' />
+              <TfiCup className="text-3xl md:text-5xl" />
               <div>
-                <h1 className='text-[18px] md:text-[25px] font-bold'>World's Best Instructors</h1>
-                <h1 className='uppercase text-[12px] md:text-[15px]'>View More</h1>
+                <h1 className="text-[18px] md:text-[25px] font-bold">World's Best Instructors</h1>
+                <h1 className="uppercase text-[12px] md:text-[15px]">View More</h1>
               </div>
             </div>
             <div className="hover:bg-blue-700 transition flex gap-6 items-center p-4">
-              <FaTv className='text-3xl md:text-5xl' />
+              <FaTv className="text-3xl md:text-5xl" />
               <div>
-                <h1 className='text-[18px] md:text-[25px] font-bold'>Learn Courses Online</h1>
-                <h1 className='uppercase text-[12px] md:text-[15px]'>View More</h1>
+                <h1 className="text-[18px] md:text-[25px] font-bold">Learn Courses Online</h1>
+                <h1 className="uppercase text-[12px] md:text-[15px]">View More</h1>
               </div>
             </div>
             <div className="hover:bg-blue-700 transition flex gap-5 items-center p-4">
-              <IoBookOutline className='text-3xl md:text-5xl' />
+              <IoBookOutline className="text-3xl md:text-5xl" />
               <div>
-                <h1 className='text-[18px] md:text-[25px] font-bold'>Online Library & Store</h1>
-                <h1 className='uppercase text-[12px] md:text-[15px]'>View More</h1>
+                <h1 className="text-[18px] md:text-[25px] font-bold">Online Library & Store</h1>
+                <h1 className="uppercase text-[12px] md:text-[15px]">View More</h1>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 }
