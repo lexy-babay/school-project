@@ -80,6 +80,7 @@ function Home1() {
         </div>
       </div>
     </div>
+    </div>
   );
 }
 
