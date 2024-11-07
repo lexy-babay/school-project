@@ -36,7 +36,7 @@ function Home1() {
           <div className="grid justify-items-center md:justify-items-start text-center md:text-left">
             <h1 className='text-[32px] md:text-[50px]'>Education & Training</h1>
             <h1 className='text-[32px] md:text-[50px]'>Organization</h1>
-            <div className="font-medium text-[18px] md:text-[22px] mt-3 text-sky-500">
+            <div className="font-medium text-[15px] md:text-[22px] mt-3 text-sky-500 bg-[red] h-[80px] w-[40%]">
               <p>We offer the most complete course package in the country, for the</p>
               <p>research, design, and development of Education.</p>
             </div>
