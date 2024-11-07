@@ -18,7 +18,7 @@ function Home1() {
     
   }
   return (
-    <div className="h-screen w-full bg-[url('/src/assets/book.jpg')] bg-cover bg-center flex flex-col items-center justify-end">
+    <div className="h-screen w-full bg-[url('/src/assets/book.jpg')] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-end">
 <div className='h-[80px] w-full text-white flex justify-between items-center px-6 md:px-10 '>
         <div className="text-[24px] md:text-[30px] flex items-center font-bold">
           <span className='text-blue-500'><FaHome className='text-white' /></span>
@@ -59,11 +59,11 @@ function Home1() {
           <div className="grid justify-items-center md:justify-items-start text-center md:text-left">
             <h1 className='text-[32px] md:text-[50px]'>Education & Training</h1>
             <h1 className='text-[32px] md:text-[50px]'>Organization</h1>
-            <div className="font-medium text-[18px] md:text-[22px] mt-3 text-sky-500">
+            <div className="font-medium text-[18px] md:text-[22px] mt-3 text-sky-500 h-[100px] w-[500px] ">
               <p>We offer the most complete course package in the country, for the</p>
               <p>research, design, and development of Education.</p>
             </div>
-            <div className="flex flex-col md:flex-row gap-4 mt-8">
+            <div className="flex flex-col md:flex-row gap-4 mt-5">
               <button className='h-[50px] md:h-[60px] w-[140px] md:w-[160px] bg-blue-500 uppercase hover:bg-blue-600 transition'>Our Courses</button>
               <button className='h-[50px] md:h-[60px] w-[140px] md:w-[160px] bg-black text-white uppercase hover:bg-slate-950 transition'>Contact Us</button>
             </div>
