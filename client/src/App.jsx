@@ -3,15 +3,17 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 // import Home from './components/Home'
 // import Landing from './components/Landing'
 import Homecomponent from './components/Homefolder/Homecomponent'
-import Header from './components/Header'
+import Header from './components/Headerfolder/Header'
 import Contact from './components/contactfolder/Contact'
 import Landing from './components/Landing'
 import Register from './components/Register'
 import AppDashboard from './components/Dashboardfolder/AppDashboard'
+import Home4 from './components/Homefolder/Home4'
 
 
 function App() {
   return (
+    
     <Router>
       <Header/>
       <Routes>
@@ -22,7 +24,9 @@ function App() {
         <Route  path='/appDashboard' element={<AppDashboard/>}></Route>
 
       </Routes>
+      <Home4/>
     </Router>
+  
   )
 
 }

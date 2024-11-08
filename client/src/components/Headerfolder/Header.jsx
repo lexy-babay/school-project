@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaHome } from "react-icons/fa";
-import Navbar from './Homefolder/navbar';
+import Navbar from '../Homefolder/navbar';
 function Header() {
   var [disp,setDisp] = useState('none')
 
@@ -33,9 +33,9 @@ function Header() {
           <Link to="/blog" className="hover:text-blue-300">About</Link>
           <div className="relative group">
             <Link className="hover:text-blue-300">Services</Link>
-            <nav className="hidden group-hover:flex flex-col gap-2 absolute top-full right-0 bg-green-500 rounded-lg shadow-lg">
-              <Link to="/landing" className="p-3 text-center hover:bg-green-600">Login</Link>
-              <Link to="/register" className="p-3 text-center hover:bg-green-600">Register</Link>
+            <nav className="hidden group-hover:flex flex-col gap-2 absolute top-full right-0 bg-slate-200 rounded-lg shadow-lg">
+              <Link to="/landing" className="p-3 text-center hover:bg-blue-500">Login</Link>
+              <Link to="/register" className="p-3 text-center hover:bg-blue-500">Register</Link>
             </nav>
           </div>
         </nav>
