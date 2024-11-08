@@ -7,6 +7,7 @@ import Header from './components/Header'
 import Contact from './components/contactfolder/Contact'
 import Landing from './components/Landing'
 import Register from './components/Register'
+import AppDashboard from './components/Dashboardfolder/AppDashboard'
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
         <Route  path='/contact' element={<Contact/>}></Route>
         <Route  path='/landing' element={<Landing/>}></Route>
         <Route  path='/register' element={<Register/>}></Route>
+        <Route  path='/appDashboard' element={<AppDashboard/>}></Route>
+
       </Routes>
     </Router>
   )
