@@ -10,16 +10,16 @@ function Contact() {
     setShow(show === '-350px' ? '0' : '-350px');
   };
   return (
-    <div className=" bg-black">
-      <div className="h-[80px] w-full text-[wheat] flex justify-between items-center px-6 md:px-10">
+    <div className=" bg-blue-500">
+      <div className="h-[80px] w-full text-white flex justify-between items-center px-6 md:px-10">
     <div className="text-[24px] md:text-[30px] flex items-center font-bold">
-      <span className="text-blue-300"><FaHome className="text-[wheat]" /></span>
+      <span className="text-blue-300"><FaHome className="text-white" /></span>
       <h1 className="ml-2">STUDYLMS</h1>
     </div>
     <nav className="hidden md:flex gap-[30px] lg:gap-[70px]">
       <Link to="/" className="hover:text-blue-300">Home</Link>
       <Link to="/contact" className="hover:text-blue-300">Contact</Link>
-      <Link to="/blog" className="hover:text-blue-300">Blog</Link>
+      <Link to="/blog" className="hover:text-blue-300">About</Link>
       <div className="relative group">
         <Link className="hover:text-blue-300">Services</Link>
         <nav className="hidden group-hover:flex flex-col gap-2 absolute top-full right-0 bg-green-500 rounded-lg shadow-lg">
@@ -35,9 +35,9 @@ function Contact() {
       <Navbar show={show} />
     </div>
   </div>
-  <div className="bg-black h-[87vh] text-white grid items-center justify-center">
+  <div className="bg-blue-500 h-[87vh] text-white grid items-center justify-center">
     <div className="text-center">
-    <h2 className='text-red-950 text-[50px] font-bold'>CONTACT <span className='text-[wheat]'>US</span></h2>
+    <h2 className='text-white text-[50px] font-bold'>CONTACT <span className='text-blue-700'>US</span></h2>
     <p className='font-san'>Looking for expert help? Contact us today for personalized solutions tailored to your needs.</p>
     <p>We're here to make things easier for you!</p>
     </div>
@@ -49,7 +49,7 @@ function Contact() {
     </svg>
   </div>
        
-   <div className='h-[110vh] bg-[#350404] grid grid-rows-[20%,80%]'>
+   <div className='h-[110vh] bg-white grid grid-rows-[20%,80%]'>
       <div className=" items-center justify-center grid">
        <h2 className='text-[30px] font-bold'>GET IN TOUCH</h2>
       </div>
@@ -58,7 +58,7 @@ function Contact() {
             <div className="grid grid-rows-[20%,70%]">
               <div className="uppercase items-center text-center">
                 <h2 className='text-[25px] font-bold'>Dont hesitate</h2>
-                <h2 className='text-[25px] font-semibold text-[wheat]'>send a message now!</h2>
+                <h2 className='text-[25px] font-semibold text-blue-500'>send a message now!</h2>
               </div>
               <div className=" grid grid-rows-[40%,60%] p-4">
                 <div className="grid grid-cols-[50%,50%] gap-3">
@@ -82,41 +82,41 @@ function Contact() {
                 <div className="">
                   <input type="text" className='h-[185px] w-full rounded-[20px]' style={{border:'1px solid black'}} placeholder='  Your Message'/>
                 </div>
-                <div className="h-[40px] w-[30%] bg-[wheat]  grid justify-center mt-3 rounded-[20px]">
-                  <button className='text-[20px] text-[#350404] grid font-bold'>Submit</button>
+                <div className="h-[40px] w-[30%] bg-blue-500  grid justify-center mt-3 rounded-[20px]">
+                  <button className='text-[20px] text-white grid font-bold'>Submit</button>
                 </div>
               </div>
             </div>
             <div className=" grid grid-rows-[35%,35%,33%] gap-3">
-              <div className="bg-[wheat] grid p-5 rounded-[13px]">
+              <div className="bg-blue-500 grid p-5 rounded-[13px]">
                 <div className="bg-black grid grid-rows-[40%,60%] rounded-[20px]">
                   <div className=""></div>
-                  <div className="bg-[#350404]">
+                  <div className="bg-white">
                     <div className="grid text-center">
-                      <h2 className='text-white text-[18px] font-semibold'>Mailing Address</h2>
-                      <p className='text-white font-serif'>Sunny isles Beach, Florida 33160, USA</p>
+                      <h2 className='text-black text-[18px] font-semibold'>Mailing Address</h2>
+                      <p className='text-black font-serif'>Sunny isles Beach, Florida 33160, USA</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="bg-[wheat] grid p-5 rounded-[13px]">
+              <div className="bg-blue-500 grid p-5 rounded-[13px]">
               <div className="bg-black grid grid-rows-[40%,60%] rounded-[20px]">
                   <div className=""></div>
-                  <div className="bg-[#350404]">
+                  <div className="bg-white">
                        <div className="grid text-center">
-                          <h2 className='text-white text-[18px] font-semibold'>Email Address</h2>
-                          <p className='text-white font-serif'>contact@STUDYLMScompany.com</p>  
+                          <h2 className='text-black text-[18px] font-semibold'>Email Address</h2>
+                          <p className='text-black font-serif'>contact@STUDYLMScompany.com</p>  
                        </div>
                   </div>
                 </div>
               </div>
-              <div className="bg-[wheat] p-5 grid rounded-[13px]">
+              <div className="bg-blue-500 p-5 grid rounded-[13px]">
               <div className="bg-black grid grid-rows-[40%,60%] rounded-[20px]">
                   <div className=""></div>
-                  <div className="bg-[#350404]">
+                  <div className="bg-white">
                     <div className="grid text-center">
-                      <h2 className='text-white text-[18px] font-semibold'>Chat With Us</h2>
-                      <p className='text-white font-serif'>chat@STUDYLMScompany.com</p>
+                      <h2 className='text-black text-[18px] font-semibold'>Chat With Us</h2>
+                      <p className='text-black font-serif'>chat@STUDYLMScompany.com</p>
                     </div>
                   </div>
                 </div>
@@ -126,7 +126,7 @@ function Contact() {
        </div>
        
     </div> 
-    <div className="bg-black text-[wheat] p-8">
+    <div className="bg-blue-500 text-white p-8">
       <div className="h-auto md:h-[65vh] max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         
         {/* Logo and Intro */}
