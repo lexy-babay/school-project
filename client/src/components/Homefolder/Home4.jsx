@@ -11,7 +11,7 @@ function Home4() {
             <span className="text-orange-500 mr-2">
               <i className="fas fa-book"></i> {/* Replace with an appropriate icon if available */}
             </span>
-            STUDYLMS
+            OLAMS
           </h2>
           <p className="mt-4 text-sm md:text-base">
             We have over 20 years of experience providing expert educational services to both businesses and individuals. Our Investment Committee brings the latest industry expertise to drive our investment approach, portfolio construction, and allocation.
@@ -81,7 +81,7 @@ function Home4() {
             </p>
             <p className="mt-2 flex items-center space-x-2 text-sm md:text-base">
               <span className="text-orange-500"><i className="fas fa-envelope"></i></span>
-              <span>Email: info@StudyLMS.com</span>
+              <span>Email: info@OLAMS.com</span>
             </p>
           </div>
         </div>

@@ -1,12 +1,17 @@
 
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Register() {
   const [role, setRole] = useState('');
+  const navigate = useNavigate(); // React Router's hook for navigation
+
 
   // Form submission handler
   const handleSubmit = (e) => {
     e.preventDefault();
+    navigate('/Appdashboard');
+
     // Handle registration submission here
     console.log(`Registration form submitted for role: ${role}`);
   };
@@ -20,6 +25,8 @@ function Register() {
           <input
             type="text"
             placeholder="First Name"
+            name='firstname'
+            value=''
             className="w-full mt-1 p-3 border border-gray-300 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500"
           />
         </div>
@@ -87,7 +94,11 @@ function Register() {
         </div>
       </div>
 
-      <button className="w-full py-3 bg-green-600 text-white font-semibold rounded-md hover:bg-green-700 transition duration-300">
+      <button
+      onClick={()=>{
+
+      }}
+      className="w-full py-3 bg-green-600 text-white font-semibold rounded-md hover:bg-green-700 transition duration-300">
         Register as {role.charAt(0).toUpperCase() + role.slice(1)}
       </button>
     </form>

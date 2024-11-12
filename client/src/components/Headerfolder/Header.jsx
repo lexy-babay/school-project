@@ -24,7 +24,7 @@ function Header() {
       <div className='h-[80px] w-full bg-blue-500 text-white flex justify-between items-center px-6 md:px-10 fixed top-0 z-10'>
         <div className="text-[24px] md:text-[30px] flex items-center font-bold">
           <span className='text-blue-500'><FaHome className='text-white' /></span>
-          <h1 className='ml-2'>STUDYLMS</h1>
+          <h1 className='ml-2 uppercase'>olams</h1>
         </div>
 
         <nav className="hidden md:flex gap-[30px] lg:gap-[70px]">
