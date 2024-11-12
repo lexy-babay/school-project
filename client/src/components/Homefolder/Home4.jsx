@@ -2,7 +2,7 @@ import React from 'react';
 
 function Home4() {
   return (
-    <div className="bg-gray-900 text-white p-8">
+    <div className="bg-blue-500 text-white p-8">
       <div className="h-auto md:h-[65vh] max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         
         {/* Logo and Intro */}

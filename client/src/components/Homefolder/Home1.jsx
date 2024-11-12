@@ -14,7 +14,7 @@ function Home1() {
 
   return (
     <div className="h-screen w-full bg-[url('/src/assets/book.jpg')] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-end">
-<div className='h-[80px] w-full text-black flex justify-between items-center px-6 md:px-10 '>
+    <div className='h-[80px] w-full text-black flex justify-between items-center px-6 md:px-10 '>
         <div className="text-[24px] md:text-[30px] flex items-center font-bold">
           <span className='text-blue-500'><FaHome className='text-black' /></span>
           <h1 className='ml-2'>STUDYLMS</h1>
