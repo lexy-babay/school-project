@@ -43,8 +43,8 @@ function Contact3() {
         {/* Contact Info Cards */}
         {[
           { title: 'Mailing Address', text: 'Sunny Isles Beach, Florida 33160, USA' },
-          { title: 'Email Address', text: 'contact@STUDYLMScompany.com' },
-          { title: 'Chat With Us', text: 'chat@STUDYLMScompany.com' }
+          { title: 'Email Address', text: 'contact@OLAMScompany.com' },
+          { title: 'Chat With Us', text: 'chat@OLAMScompany.com' }
         ].map((info, index) => (
           <div key={index} className="bg-blue-500 p-5 rounded-[13px] flex items-center justify-center">
             <div className="bg-black rounded-[20px] w-full p-4 flex flex-col items-center">
@@ -57,6 +57,7 @@ function Contact3() {
     </div>
   </div>
  </div>
+
     </div>
   )
 }
