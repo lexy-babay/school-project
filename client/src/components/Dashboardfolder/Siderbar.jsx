@@ -23,15 +23,11 @@ function Sidebar() {
       >
         {isOpen ? 'Close' : 'Open'} Menu
       </button>
-<<<<<<< HEAD
 
       {/* Logo/Title */}
-      <h2 className="text-2xl font-bold mb-6">STUDYLMS</h2>
-
+      <h2 className="text-2xl font-bold mb-6">Olams</h2>
       {/* Menu Items */}
-=======
       <h2 className="text-2xl font-bold mb-6 uppercase">Olams</h2>
->>>>>>> 3325030b3be1ad1cf01015acf2690f632929655e
       <ul className="space-y-4">
         {menuItems.map((item, index) => (
           <li 
