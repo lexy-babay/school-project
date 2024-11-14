@@ -2,7 +2,8 @@ import React from 'react';
 
 function Home4() {
   return (
-    <div className="bg-blue-500 text-white p-8">
+   <div className="">
+     <div className="bg-blue-500 text-white p-8">
       <div className="h-auto md:h-[65vh] max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         
         {/* Logo and Intro */}
@@ -16,8 +17,8 @@ function Home4() {
           <p className="mt-4 text-sm md:text-base">
             We have over 20 years of experience providing expert educational services to both businesses and individuals. Our Investment Committee brings the latest industry expertise to drive our investment approach, portfolio construction, and allocation.
           </p>
-          <button className="mt-4 px-4 py-2 border border-white text-white hover:bg-white hover:text-gray-900 transition text-sm md:text-base">
-            START LEARNING NOW
+          < button className="mt-4 px-4 py-2 border border-white text-white hover:bg-white hover:text-gray-900 transition text-sm md:text-base">
+           GET STARTED
           </button>
         </div>
 
@@ -67,7 +68,7 @@ function Home4() {
 
           {/* Contact Us */}
           <div>
-            <h3 className="text-xl font-semibold">Contact Us</h3>
+            <button className="text-xl font-semibold">Contact Us</button>
             <p className="mt-4 text-sm md:text-base">
               If you want to contact us about any issue, our support is available to help you from 8am-7pm Monday to Saturday.
             </p>
@@ -87,6 +88,7 @@ function Home4() {
         </div>
       </div>
     </div>
+   </div>
   );
 }
 

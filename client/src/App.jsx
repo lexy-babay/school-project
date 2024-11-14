@@ -9,6 +9,7 @@ import Landing from './components/Landing'
 import Register from './components/Register'
 import AppDashboard from './components/Dashboardfolder/AppDashboard'
 import Home4 from './components/Homefolder/Home4'
+import About from './components/Aboutfolder/About'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route  path='/' element={<Homecomponent/>}></Route>
         <Route  path='/contact' element={<Contact/>}></Route>
+        <Route  path='/about' element={<About/>}></Route>
         <Route  path='/landing' element={<Landing/>}></Route>
         <Route  path='/register' element={<Register/>}></Route>
         <Route  path='/appDashboard' element={<AppDashboard/>}></Route>

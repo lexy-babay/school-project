@@ -22,9 +22,9 @@ function Home1() {
         <nav className="hidden md:flex gap-[30px] lg:gap-[70px]">
           <Link to="/" className="hover:text-blue-300">Home</Link>
           <Link to="/contact" className="hover:text-blue-300">Contact</Link>
-          <Link to="/blog" className="hover:text-blue-300">About</Link>
+          <Link to="/about" className="hover:text-blue-300">About</Link>
           <div className="relative group">
-            <Link className="hover:text-blue-300">Services</Link>
+            <Link className="hover:text-blue-300">Get Started</Link>
             <nav className="hidden group-hover:flex flex-col gap-2 absolute top-full right-0  bg-slate-200 rounded-lg shadow-lg">
               <Link to="/landing" className="p-3 text-center hover:bg-blue-500">Login</Link>
               <Link to="/register" className="p-3 text-center hover:bg-blue-500">Register</Link>
@@ -50,7 +50,7 @@ function Home1() {
             </div>
             <div className="flex flex-col md:flex-row gap-4 mt-5">
               <button className='h-[50px] md:h-[60px] w-[140px] md:w-[160px] bg-blue-500 uppercase text-white text-[15px] hover:bg-blue-600 transition'>Our Courses</button>
-              <button className='h-[50px] md:h-[60px] w-[140px] md:w-[160px] bg-black text-white  text-[15px] uppercase hover:bg-slate-950 transition'>Contact Us</button>
+              <button className='h-[50px] md:h-[60px] w-[140px] md:w-[160px] bg-black text-white  text-[15px] uppercase hover:bg-slate-950 transition'><Link to="/contact">Contact Us</Link></button>
             </div>
           </div><br />
 

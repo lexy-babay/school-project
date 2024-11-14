@@ -11,7 +11,7 @@ function Sidebar() {
       >
         {isOpen ? 'Close' : 'Open'} Menu
       </button>
-      <h2 className="text-2xl font-bold mb-6">STUDYLMS</h2>
+      <h2 className="text-2xl font-bold mb-6 uppercase">Olams</h2>
       <ul className="space-y-4">
         <li className="hover:bg-gray-200 p-2 rounded cursor-pointer">Dashboard</li>
         <li className="hover:bg-gray-200 p-2 rounded cursor-pointer">Management</li>

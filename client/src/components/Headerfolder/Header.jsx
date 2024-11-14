@@ -30,9 +30,9 @@ function Header() {
         <nav className="hidden md:flex gap-[30px] lg:gap-[70px]">
           <Link to="/" className="hover:text-blue-300">Home</Link>
           <Link to="/contact" className="hover:text-blue-300">Contact</Link>
-          <Link to="/blog" className="hover:text-blue-300">About</Link>
+          <Link to="/about" className="hover:text-blue-300">About</Link>
           <div className="relative group">
-            <Link className="hover:text-blue-300">Services</Link>
+            <Link className="hover:text-blue-300">Get Started</Link>
             <nav className="hidden group-hover:flex flex-col gap-2 absolute top-full right-0 bg-slate-200 rounded-lg shadow-lg">
               <Link to="/landing" className="p-3 text-center hover:bg-blue-500">Login</Link>
               <Link to="/register" className="p-3 text-center hover:bg-blue-500">Register</Link>
