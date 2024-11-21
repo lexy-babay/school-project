@@ -2,7 +2,7 @@ import React from 'react'
 
 function About3() {
   return (
-    <div className='h-[135vh] bg-blue-500 '>
+    <div className='h-[135vh] bg-black '>
  <div class="custom-shape-divider-top-1731453262 ">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
