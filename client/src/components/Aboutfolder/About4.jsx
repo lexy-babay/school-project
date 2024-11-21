@@ -11,7 +11,7 @@ function About4() {
            <h2 className=''>Expertise you</h2>
            <h2> can count on</h2>
           </div>
-          <div className="h-[50px] w-[100%] text-center items-center grid bg-blue-500 rounded-[20px] ">
+          <div className="h-[50px] w-[100%] text-center items-center grid bg-black rounded-[20px] ">
             <button className='text-[20px] text-white capitalize '><a href="#about us">Learn more about us</a></button>
           </div>
           </div>
