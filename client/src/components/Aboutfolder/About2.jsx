@@ -38,7 +38,7 @@ function About2() {
     </div>
     </div>
     <div className="grid p-14 ">
-     <div className="bg-black  rounded-[20px] items-center justify-center grid mt-14 w-[55%] h-[250px]">
+     <div className="bg-blue-500  rounded-[20px] items-center justify-center grid mt-14 w-[55%] h-[250px]">
      <div className="items-center justify-center grid p-5">
      <h2 className='uppercase text-white text-[50px]'>About us</h2>
        <p className='font-thin text-white text-[20px]'> OLAMS plays a critical role in modernizing and improving the operations of educational institutions.</p>
