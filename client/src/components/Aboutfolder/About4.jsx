@@ -2,7 +2,6 @@ import React from 'react';
 
 function About4() {
   return (
-
     <div className="min-h-[75vh] grid p-11">
       <div className=" grid grid-cols-[50%,50%] ">
         <div className=" grid p-14 justify-end">
@@ -14,6 +13,10 @@ function About4() {
           <div className="h-[50px] w-[100%] text-center items-center grid bg-black rounded-[20px] ">
             <button className='text-[20px] text-white capitalize '><a href="#about us">Learn more about us</a></button>
           </div>
+          </div>
+          </div>
+         </div>
+          
     <div className="h-auto min-h-[75vh] p-6 sm:p-8 md:p-11 grid">
       <div className="grid grid-cols-1 md:grid-cols-[50%,50%] gap-6">
         {/* Left Section */}
@@ -72,6 +75,7 @@ function About4() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

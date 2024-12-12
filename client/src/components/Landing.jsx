@@ -26,7 +26,7 @@ function Landing() {
     if (userFound) {
       // If the credentials match, redirect to the desired page
       setError('');
-      navigate('/Appdashboard'); // Redirect to the dashboard or any page
+      navigate('/admin'); // Redirect to the dashboard or any page
     } else {
       // If credentials don't match, set an error message
       setError('Incorrect username or password.');

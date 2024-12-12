@@ -10,7 +10,7 @@ function Register() {
   // Form submission handler
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate('/Appdashboard');
+    navigate('/admin');
 
     // Handle registration submission here
     console.log(`Registration form submitted for role: ${role}`);
