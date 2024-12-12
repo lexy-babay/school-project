@@ -94,25 +94,6 @@ function About2() {
       </div>
       
   )
-
-      {/* About Section */}
-      <div className="p-6 md:p-14">
-        <div className=" backdrop-blur-md rounded-[20px] flex flex-col items-start justify-center mt-14 w-full max-w-[600px] h-auto min-h-[250px] px-4 py-8">
-          <h2 className="uppercase text-white text-[30px] sm:text-[40px] md:text-[50px] text-left">
-            About us
-          </h2>
-          <p className="font-thin text-white text-[14px] sm:text-[16px] md:text-[20px] text-left mt-4">
-            OLAMS plays a critical role in modernizing and improving the operations of educational
-            institutions.
-          </p>
-          <p className="font-thin text-white text-[14px] sm:text-[16px] md:text-[20px] text-left mt-2">
-            By automating administrative tasks, providing real-time data, and improving
-            communication.
-          </p>
-        </div>
-      </div>
-    </div>
-  );
 }
 
 export default About2;
