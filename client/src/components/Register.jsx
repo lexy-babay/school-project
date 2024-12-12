@@ -98,7 +98,7 @@ function Register() {
       onClick={()=>{
 
       }}
-      className="w-full py-3 bg-green-600 text-white font-semibold rounded-md hover:bg-green-700 transition duration-300">
+      className="w-full py-3 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition duration-300">
         Register as {role.charAt(0).toUpperCase() + role.slice(1)}
       </button>
     </form>

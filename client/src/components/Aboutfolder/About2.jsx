@@ -12,8 +12,11 @@ function About2() {
   }
 
   return (
- <div className="bg-[url('/src/assets/school.jpg')] bg-cover bg-center bg-no-repeat h-[90vh]">
-            <div className=" bg-transparent h-[80px] w-full text-white flex justify-between items-center px-6 md:px-10">
+    <>
+
+  <div className=' bg-[url(./assets/office.jpg)] grid min-h-[90vh] bg-cover bg-center'>
+          <div className=' bg-[#6161eb4d] h-[90vh] grid'>
+          <div className=" bg-transparent h-[80px] w-full text-white flex justify-between items-center px-6 md:px-10">
     <div className="text-[24px] md:text-[30px] flex items-center font-bold">
       <span className="text-blue-300"><FaHome className="text-white" /></span>
       <h1 className="ml-2 uppercase">olams</h1>
@@ -38,9 +41,9 @@ function About2() {
     </div>
     </div>
     <div className="grid p-14 ">
-     <div className="bg-black  rounded-[20px] items-center justify-center grid mt-14 w-[55%] h-[250px]">
+     <div className="bg-[#000000a6]  rounded-[20px] items-center justify-center grid mt-14 w-[55%] h-[250px]">
      <div className="items-center justify-center grid p-5">
-     <h2 className='uppercase text-white text-[50px]'>About us</h2>
+     <h2 className='uppercase text-[50px] text-blue-500 '>About us</h2>
        <p className='font-thin text-white text-[20px]'> OLAMS plays a critical role in modernizing and improving the operations of educational institutions.</p>
         <p className='font-thin text-white text-[20px]'> By automating administrative tasks, providing real-time data, and improving communication, </p>
          {/* SMS can help create a more organized and efficient school environment. The right system can make a significant impact on student performance, school management, and overall educational quality, while also saving time and resources for both staff and students.
@@ -48,8 +51,9 @@ function About2() {
      </div>
      </div>
     </div>
-  
+          </div>
       </div>
+      </> 
   )
 }
 

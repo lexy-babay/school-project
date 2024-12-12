@@ -41,7 +41,7 @@
 
 .custom-shape-divider-top-1731453262 {
     position: absolute;
-    top: 10;
+    top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -52,13 +52,13 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 251px;
+    height: 215px;
     transform: rotateY(180deg);
 }
 
 .custom-shape-divider-top-1731453262 .shape-fill {
     fill: #130707;
-    fill: #ffff;
+    fill: #fff;
 
 }
 

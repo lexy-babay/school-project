@@ -63,7 +63,7 @@ function Landing() {
             />
           </div>
           {error && <p className='text-red-500'>{error}</p>}
-          <button type="submit" className="h-[45px] bg-green-600 hover:bg-green-700 w-full text-white rounded-[20px]">
+          <button type="submit" className="h-[45px] bg-blue-500 hover:bg-blue-600 w-full text-white rounded-[20px]">
             Login
           </button>
         </form>

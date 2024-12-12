@@ -3,7 +3,7 @@ import React from 'react'
 function About4() {
   return (
 
-    <div className="h-[75vh] grid p-11">
+    <div className="min-h-[75vh] grid p-11">
       <div className=" grid grid-cols-[50%,50%] ">
         <div className=" grid p-14 justify-end">
           <div className="">

@@ -49,7 +49,7 @@ function Home1() {
               <p>We offer the most complete course package in the country, for the research, design, and development of Education.</p>
             </div>
             <div className="flex flex-col md:flex-row gap-4 mt-5">
-              <button className='h-[50px] md:h-[60px] w-[140px] md:w-[160px] bg-blue-500 uppercase text-white text-[15px] hover:bg-blue-600 transition'><Link to="/about">Our value</Link></button>
+              <button className='h-[50px] md:h-[60px] w-[140px] md:w-[160px] bg-blue-500 uppercase text-white text-[15px] hover:bg-blue-600 transition'><Link to='/about'>About Us</Link></button>
               <button className='h-[50px] md:h-[60px] w-[140px] md:w-[160px] bg-black text-white  text-[15px] uppercase hover:bg-slate-950 transition'><Link to="/contact">Contact Us</Link></button>
             </div>
           </div><br />
