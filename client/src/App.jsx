@@ -7,9 +7,10 @@ import Header from './components/Headerfolder/Header'
 import Contact from './components/contactfolder/Contact'
 import Landing from './components/Landing'
 import Register from './components/Register'
-import AppDashboard from './components/Dashboardfolder/AppDashboard'
+// import AppDashboard from './components/Dashboardfolder/AppDashboard'
 import Home4 from './components/Homefolder/Home4'
 import About from './components/Aboutfolder/About'
+import Testadmin from './components/Dashboardfolder/Testadmin'
 
 
 function App() {
@@ -23,7 +24,9 @@ function App() {
         <Route  path='/about' element={<About/>}></Route>
         <Route  path='/landing' element={<Landing/>}></Route>
         <Route  path='/register' element={<Register/>}></Route>
-        <Route  path='/appDashboard' element={<AppDashboard/>}></Route>
+        <Route  path='/admin' element={<Testadmin/>}></Route>
+
+        {/* <Route  path='/appDashboard' element={<AppDashboard/>}></Route> */}
 
       </Routes>
       <Home4/>
