@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import Navbar from '../Homefolder/navbar';
-import { FaHome } from 'react-icons/fa';
+import { FaTv, FaHome } from "react-icons/fa";
 
 function About2() {
-  const [show, setShow] = useState('-350px');
+
+    const [show, setShow] = useState('-350px');
 
   const toggleMenu = () => {
     setShow(show === '-350px' ? '0' : '-350px');
-  };
+  }
 
   return (
     <>
@@ -29,47 +30,7 @@ function About2() {
         <nav className="hidden group-hover:flex flex-col gap-2 absolute top-full right-0 bg-slate-200 rounded-lg shadow-lg">
           <Link to="/landing" className="p-3 text-center hover:bg-blue-500">Login</Link>
           <Link to="/register" className="p-3 text-center hover:bg-blue-500">Register</Link>
-    <div className="bg-[url('/src/assets/school.jpg')] bg-cover bg-center bg-no-repeat h-auto min-h-[90vh]">
-      {/* Navbar Section */}
-      <div className="bg-transparent h-[80px] w-full text-white flex justify-between items-center px-6 md:px-10">
-        {/* Logo */}
-        <div className="text-[24px] md:text-[30px] flex items-center font-bold">
-          <span className="text-blue-300">
-            <FaHome className="text-white" />
-          </span>
-          <h1 className="ml-2 uppercase">olams</h1>
-        </div>
-
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-[30px] lg:gap-[70px]">
-          <Link to="/" className="hover:text-blue-300">
-            Home
-          </Link>
-          <Link to="/contact" className="hover:text-blue-300">
-            Contact
-          </Link>
-          <Link to="/about" className="hover:text-blue-300">
-            About</Link>
-          <div className="relative group">
-            <Link className="hover:text-blue-300">Get Started</Link>
-            <nav className="hidden group-hover:flex flex-col gap-2 absolute top-full right-0 bg-slate-200 rounded-lg shadow-lg">
-              <Link to="/landing" className="p-3 text-center hover:bg-blue-500">
-                Login
-              </Link>
-              <Link to="/register" className="p-3 text-center hover:bg-blue-500">
-                Register
-              </Link>
-            </nav>
-          </div>
         </nav>
-
-        {/* Mobile Navigation */}
-        <div className="md:hidden flex items-center">
-          <button onClick={toggleMenu} className="text-xl focus:outline-none">
-            ☰
-          </button>
-          <Navbar show={show} />
-        </div>
       </div>
     </nav>
     <div className="md:hidden flex items-center">
@@ -92,8 +53,8 @@ function About2() {
     </div>
           </div>
       </div>
-      
+      </> 
   )
 }
 
-export default About2;
+export default About2
