@@ -3,7 +3,7 @@ import React from 'react';
 function About4() {
   return (
     <div className="min-h-[75vh] grid p-11">
-      <div className=" grid grid-cols-[50%,50%] ">
+      {/* <div className=" grid grid-cols-[50%,50%] ">
         <div className=" grid p-14 justify-end">
           <div className="">
           <div className=" text-[45px] text-end text-blue-700 mb-3 grid">
@@ -15,7 +15,7 @@ function About4() {
           </div>
           </div>
           </div>
-         </div>
+         </div> */}
           
     <div className="h-auto min-h-[75vh] p-6 sm:p-8 md:p-11 grid">
       <div className="grid grid-cols-1 md:grid-cols-[50%,50%] gap-6">
