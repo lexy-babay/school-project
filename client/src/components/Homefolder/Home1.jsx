@@ -4,9 +4,11 @@ import { FaTv, FaHome } from "react-icons/fa";
 import { IoBookOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 import Navbar from '../Homefolder/navbar';
+import Landing from '../Landing'; // Import the Landing component
 
 function Home1() {
   const [show, setShow] = useState('-350px');
+  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false); // State to manage Login modal visibility
 
   const toggleMenu = () => {
     setShow(show === '-350px' ? '0' : '-350px');
@@ -14,7 +16,7 @@ function Home1() {
 
   return (
     <div className="h-screen w-full bg-[url('/src/assets/book.jpg')] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-end">
-    <div className='h-[80px] w-full text-black flex justify-between items-center px-6 md:px-10 '>
+      <div className='h-[80px] w-full text-black flex justify-between items-center px-6 md:px-10 '>
         <div className="text-[24px] md:text-[30px] flex items-center font-bold">
           <span className='text-blue-500'><FaHome className='text-black' /></span>
           <h1 className='ml-2 uppercase'>olams</h1>
@@ -25,8 +27,13 @@ function Home1() {
           <Link to="/about" className="hover:text-blue-300">About</Link>
           <div className="relative group">
             <Link className="hover:text-blue-300">Get Started</Link>
-            <nav className="hidden group-hover:flex flex-col gap-2 absolute top-full right-0  bg-slate-200 rounded-lg shadow-lg">
-              <Link to="/landing" className="p-3 text-center hover:bg-blue-500">Login</Link>
+            <nav className="hidden group-hover:flex flex-col gap-2 absolute top-full right-0 bg-slate-200 rounded-lg shadow-lg">
+              <button
+                className="p-3 text-center hover:bg-blue-500"
+                onClick={() => setIsLoginModalOpen(true)} // Open the Login modal
+              >
+                Login
+              </button>
               <Link to="/register" className="p-3 text-center hover:bg-blue-500">Register</Link>
             </nav>
           </div>
@@ -45,42 +52,52 @@ function Home1() {
             <h1 className='text-[32px] md:text-[50px]'>Education & Training</h1>
             <h1 className='text-[32px] md:text-[50px]'>Organization</h1>
             <div className="font-medium text-[15px] md:text-[22px] mt-3 text-sky-500  ">
-            <div className="font-medium text-[18px] md:text-[22px] mt-3 text-sky-500 h-[100px] w-[500px] ">
-              <p>We offer the most complete course package in the country, for the research, design, and development of Education.</p>
-            </div>
-            <div className="flex flex-col md:flex-row gap-4 mt-5">
-              <button className='h-[50px] md:h-[60px] w-[140px] md:w-[160px] bg-blue-500 uppercase text-white text-[15px] hover:bg-blue-600 transition'><Link to='/about'>About Us</Link></button>
-              <button className='h-[50px] md:h-[60px] w-[140px] md:w-[160px] bg-black text-white  text-[15px] uppercase hover:bg-slate-950 transition'><Link to="/contact">Contact Us</Link></button>
-            </div>
-          </div><br />
+              <div className="font-medium text-[18px] md:text-[22px] mt-3 text-sky-500 h-[100px] w-[500px] ">
+                <p>We offer the most complete course package in the country, for the research, design, and development of Education.</p>
+              </div>
+              <div className="flex flex-col md:flex-row gap-4 mt-5">
+                <button className='h-[50px] md:h-[60px] w-[140px] md:w-[160px] bg-blue-500 uppercase text-white text-[15px] hover:bg-blue-600 transition'>
+                  <Link to='/about'>About Us</Link>
+                </button>
+                <button className='h-[50px] md:h-[60px] w-[140px] md:w-[160px] bg-black text-white  text-[15px] uppercase hover:bg-slate-950 transition'>
+                  <Link to="/contact">Contact Us</Link>
+                </button>
+              </div>
+            </div><br />
 
-          <div className="bg-blue-500 h-[150px] w-[100%] grid grid-cols-1 md:grid-cols-3 mt-7 mb-5">
-            <div className="hover:bg-blue-700 transition text-black flex gap-5 items-center p-4">
-              <TfiCup className="text-3xl md:text-5xl" />
-              <div>
-                <h1 className="text-[18px] md:text-[25px] font-bold">World's Best Instructors</h1>
-                <h1 className="uppercase text-[12px] md:text-[15px]">View More</h1>
+            <div className="bg-blue-500 h-[150px] w-[100%] grid grid-cols-1 md:grid-cols-3 mt-7 mb-5">
+              <div className="hover:bg-blue-700 transition text-black flex gap-5 items-center p-4">
+                <TfiCup className="text-3xl md:text-5xl" />
+                <div>
+                  <h1 className="text-[18px] md:text-[25px] font-bold">World's Best Instructors</h1>
+                  <h1 className="uppercase text-[12px] md:text-[15px]">View More</h1>
+                </div>
               </div>
-            </div>
-            <div className="hover:bg-blue-700 transition flex gap-6 items-center p-4">
-              <FaTv className="text-3xl md:text-5xl" />
-              <div>
-                <h1 className="text-[18px] md:text-[25px] font-bold">Learn Courses Online</h1>
-                <h1 className="uppercase text-[12px] md:text-[15px]">View More</h1>
+              <div className="hover:bg-blue-700 transition flex gap-6 items-center p-4">
+                <FaTv className="text-3xl md:text-5xl" />
+                <div>
+                  <h1 className="text-[18px] md:text-[25px] font-bold">Learn Courses Online</h1>
+                  <h1 className="uppercase text-[12px] md:text-[15px]">View More</h1>
+                </div>
               </div>
-            </div>
-            <div className="hover:bg-blue-700 transition flex gap-5 items-center p-4">
-              <IoBookOutline className="text-3xl md:text-5xl" />
-              <div>
-                <h1 className="text-[18px] md:text-[25px] font-bold">Online Library & Store</h1>
-                <h1 className="uppercase text-[12px] md:text-[15px]">View More</h1>
+              <div className="hover:bg-blue-700 transition flex gap-5 items-center p-4">
+                <IoBookOutline className="text-3xl md:text-5xl" />
+                <div>
+                  <h1 className="text-[18px] md:text-[25px] font-bold">Online Library & Store</h1>
+                  <h1 className="uppercase text-[12px] md:text-[15px]">View More</h1>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    {/* </div> */}
+
+      {/* Login Modal */}
+      {isLoginModalOpen && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <Landing closeModal={() => setIsLoginModalOpen(false)} />
+        </div>
+      )}
     </div>
   );
 }

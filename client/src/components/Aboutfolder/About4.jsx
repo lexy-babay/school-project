@@ -2,8 +2,28 @@ import React from 'react';
 
 function About4() {
   return (
+<<<<<<< HEAD
     <div className="min-h-[75vh] p-6 sm:p-8 md:p-11 grid items-center">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+=======
+    <div className="min-h-[75vh] grid p-11">
+      {/* <div className=" grid grid-cols-[50%,50%] ">
+        <div className=" grid p-14 justify-end">
+          <div className="">
+          <div className=" text-[45px] text-end text-blue-700 mb-3 grid">
+           <h2 className=''>Expertise you</h2>
+           <h2> can count on</h2>
+          </div>
+          <div className="h-[50px] w-[100%] text-center items-center grid bg-black rounded-[20px] ">
+            <button className='text-[20px] text-white capitalize '><a href="#about us">Learn more about us</a></button>
+          </div>
+          </div>
+          </div>
+         </div> */}
+          
+    <div className="h-auto min-h-[75vh] p-6 sm:p-8 md:p-11 grid">
+      <div className="grid grid-cols-1 md:grid-cols-[50%,50%] gap-6">
+>>>>>>> d47a28eabf569513870ea9dc9af465a2a737f996
         {/* Left Section */}
         <div className="grid text-center md:text-end justify-center md:justify-end p-4 sm:p-8 md:p-14">
           <div>
